@@ -1,0 +1,40 @@
+# Import module
+import tkinter
+from tkinter import *
+
+# Create object
+root = Tk()
+
+# Adjust size
+root.geometry("720x403")
+
+# Add image file
+bg = PhotoImage(file="C:/Users/user/Desktop/pexels-pixabay-207691.png")
+
+# Show image using label
+label1 = Label(root, image=bg)
+label1.place(x=0, y=0)
+
+canv = Canvas(height=40,width=250,bg = 'black')
+canv.place(relx=0.5,rely=0.2 , anchor=CENTER)
+
+label2 = Label(text = "Καλως Ηλθατε",bg = 'black' ,foreground="white" )
+label2.place(relx=0.5, rely=0.2, anchor=CENTER)
+
+canv2 = Canvas(height=40,width=250,bg = 'black')
+canv2.place(relx=0.5,rely=0.3 , anchor=CENTER)
+
+button1 = Button(text = "Δες τα φαγητά της εβδομάδας",foreground='white',bg ='black')
+button1.place(relx=0.5,rely=0.3,anchor=CENTER)
+
+canv2 = Canvas(height=40,width=250,bg = 'black')
+canv2.place(relx=0.5,rely=0.4 , anchor=CENTER)
+
+button2 = Button(text = "Δες τα αγαπημένα",foreground='white',bg ='black')
+button2.place(relx=0.5,rely=0.4,anchor=CENTER)
+
+
+
+
+# Execute tkinter
+root.mainloop()
