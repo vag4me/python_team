@@ -1,38 +1,45 @@
 # Import module
 import tkinter
 from tkinter import *
+from tkinter.ttk import *
 
 # Create object
 root = Tk()
 
+#input title
+root.title("Πρόγραμμα Λέσχης")
+
 # Adjust size
-root.geometry("720x403")
+root.geometry("700x500")
 
 # Add image file
-bg = PhotoImage(file="C:/Users/user/Desktop/pexels-pixabay-207691.png")
+bg = PhotoImage(file="C:/Users/user/Downloads/background-images-for-login-page3bc68c53b0db224b.png")
 
 # Show image using label
 label1 = Label(root, image=bg)
 label1.place(x=0, y=0)
 
-canv = Canvas(height=40,width=250,bg = 'black')
-canv.place(relx=0.5,rely=0.2 , anchor=CENTER)
+canv = Canvas(height=180,width=380,bg="LightCyan3")
+canv.place(x=150,y=60 )
 
-label2 = Label(text = "Καλως Ηλθατε",bg = 'black' ,foreground="white" )
-label2.place(relx=0.5, rely=0.2, anchor=CENTER)
+label2 = Label(text= "Καλώς Ηλθατε!",font= "Bold 20",background='LightCyan3')
+label2.place(x=230,y=80)
 
-canv2 = Canvas(height=40,width=250,bg = 'black')
-canv2.place(relx=0.5,rely=0.3 , anchor=CENTER)
+style = Style()
 
-button1 = Button(text = "Δες τα φαγητά της εβδομάδας",foreground='white',bg ='black')
-button1.place(relx=0.5,rely=0.3,anchor=CENTER)
+style.configure('TButton', font=
+('calibri'),  borderwidth='4')
 
-canv2 = Canvas(height=40,width=250,bg = 'black')
-canv2.place(relx=0.5,rely=0.4 , anchor=CENTER)
+# Changes will be reflected by the movement of mouse.
 
-button2 = Button(text = "Δες τα αγαπημένα",foreground='white',bg ='black')
-button2.place(relx=0.5,rely=0.4,anchor=CENTER)
+style.map('TButton', foreground=[('active', '!disabled', 'blue')],
+          background=[('active', 'black')])
 
+button1 = Button(text="Δες όλα τα φαγητά της εβδομάδας")
+button1.place(x = 200,y= 140)
+
+button2 = Button(text="Δες τα αγαπημένα φαγήτα σου")
+button2.place(x=200,y=180)
 
 
 
