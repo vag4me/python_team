@@ -24,6 +24,10 @@ def b5():
     destruction()
     canv3.place(x=150, y=60)
     label4.place(x=230, y=80)
+    button14.place(x=200, y=140)
+    button15.place(x=350, y=140)
+    button16.place(x=200, y=190)
+    button17.place(x=350, y=190)
 
 # // για την Πεμπτη
 def b6():
@@ -153,7 +157,10 @@ button12 = Button(text = "Σνίτσελ")
 button13 = Button(text = "Φαλάφελ")
 
 #Αρχικοποιηση για την Τεταρτη
-
+button14 = Button(text="Φακές :(")
+button15 = Button(text="Ρεβύθια ")
+button16 = Button(text = "Φασολάδα ")
+button17 = Button(text = "Γίγαντες")
 
 
 
