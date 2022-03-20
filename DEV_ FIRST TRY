@@ -47,15 +47,81 @@ def b7():
 
 # // για το Σαββατο
 def b8():
+    destruction()#Import module
+import tkinter
+from tkinter import *
+from tkinter.ttk import *
+
+# Η συναρτηση για την Δευτερα
+def b3():
+    destruction()
+    canv3.place(x=150,y=60)
+    label4.place(x=230, y=80)
+    button18.place(x=200, y=140)
+    button19.place(x=350, y=140)
+    button20.place(x=200, y=190)
+    button21.place(x=350, y=190)
+
+# // για την Τριτη
+def b4():
     destruction()
     canv3.place(x=150, y=60)
     label4.place(x=230, y=80)
+    button10.place(x=200, y=140)
+    button11.place(x=350, y=140)
+    button12.place(x=200, y=190)
+    button13.place(x=350, y=190)
+
+# //  για την Τεταρτη
+def b5():
+    destruction()
+    canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
+    button14.place(x=200, y=140)
+    button15.place(x=350, y=140)
+    button16.place(x=200, y=190)
+    button17.place(x=350, y=190)
+
+# // για την Πεμπτη
+def b6():
+    destruction()
+    canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
+    button22.place(x=250, y=130)
+    button23.place(x=250, y=170)
+    button24.place(x=250, y=210)
+    button25.place(x=250, y=250)
+
+# // για την Παρασκευη
+def b7():
+    destruction()
+    canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
+    button26.place(x=200, y=140)
+    button27.place(x=350, y=140)
+    button28.place(x=200, y=190)
+    button29.place(x=350, y=190)
+
+
+# // για το Σαββατο
+def b8():
+    destruction()
+    canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
+    button30.place(x=200, y=140)
+    button31.place(x=350, y=140)
+    button32.place(x=200, y=190)
+    button33.place(x=350, y=190)
 
 # // για την Κυριακη
 def b9():
     destruction()
     canv3.place(x=150, y=60)
     label4.place(x=230, y=80)
+    button34.place(x=200, y=140)
+    button35.place(x=350, y=140)
+    button36.place(x=200, y=190)
+    button37.place(x=350, y=190)
 
 # καθαριζει την οθονη για την επομενη σελιδα
 def destruction():
@@ -172,6 +238,30 @@ button14 = Button(text="Φακές :(")
 button15 = Button(text="Ρεβύθια ")
 button16 = Button(text = "Φασολάδα ")
 button17 = Button(text = "Γίγαντες")
+
+#Αρχικοποιηση για την Πεμπτη
+button22 = Button(text="Κοτομπουκίες")
+button23 = Button(text="Κοτόπουλο Μπούτι")
+button24 = Button(text ="Μπιφτέκι κοτόπουλο  ")
+button25 = Button(text = "Κοτόπουλο Κοκκινιστό")
+
+#Αρχικοποιηση για την Παρασκευη
+button26 = Button(text="Σουτζουκάκια")
+button27 = Button(text="Παστίτσιο :)")
+button28 = Button(text ="Κεφτεδάκια ")
+button29 = Button(text = "Γίγαντες  ")
+
+#Αρχικοποιηση για το Σαββατο
+button30 = Button(text="Κρέας λεμονάτο")
+button31 = Button(text = "Κρέας Κοκκινιστό")
+button32 = Button(text = "   Τορτελίνια   ")
+button33 = Button(text="   Σνίτζελ        ")
+
+#Αρχικοποιηση για την Κυριακη
+button34 = Button(text="Σπαγγέτι")
+button35 = Button(text="Κοτόπουλο")
+button36 = Button(text="Μπηφτέκακια")
+button37 = Button(text="Κοτομπουκίες")
 
 
 
