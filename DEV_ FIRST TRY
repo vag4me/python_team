@@ -3,6 +3,50 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
+# Οι μερες της εβδομαδας για να διαλεξει ο χρηστης
+def show_new_window():
+    canv = Canvas(height=270, width=380, bg="LightCyan3")
+    canv.place(x=150, y=60)
+
+    label3 = Label(text = "Διάλεξε μέρα",font= "Bold 20",background='LightCyan3')
+    label3.place(x=255, y=80)
+
+    button3 = Button(text="Δευτέρα")
+    button3.place(x = 200,y= 140)
+
+    button4 = Button(text="Τρίτη")
+    button4.place(x=350, y=140)
+
+    button5 = Button(text="Τετάρτη")
+    button5.place(x=200, y=190)
+
+    button6 = Button(text="Πέμπτη")
+    button6.place(x=350, y=190)
+
+    button7 = Button(text="Παρασκευή")
+    button7.place(x=200, y=240)
+
+    button7 = Button(text="Σάββατο")
+    button7.place(x=350, y=240)
+
+    button7 = Button(text="Κυριακή")
+    button7.place(x=275, y=290)
+
+
+
+def clear_window_1():
+    label2.destroy()
+    canv.destroy()
+    button2.destroy()
+    button1.destroy()
+    show_new_window()
+
+def clear_window_2():
+    label2.destroy()
+    canv.destroy()
+    button2.destroy()
+    button1.destroy()
+
 # Create object
 root = Tk()
 
@@ -13,9 +57,11 @@ root.geometry("700x500")
 #lock the deminsions of the window
 root.resizable(width=False, height=False)
 
+#put logo icon
+photo = PhotoImage(file = "C:/Users/user/Downloads/9f596769-790d-4b5f-bb80-668016a9c920.png")
+root.iconphoto(False, photo)
 
-
-# Add image file
+# put image file
 bg = PhotoImage(file="C:/Users/user/Downloads/background-images-for-login-page3bc68c53b0db224b.png")
 
 # Show image using label
@@ -38,10 +84,10 @@ style.configure('TButton', font=
 style.map('TButton', foreground=[('active', '!disabled', 'blue')],
           background=[('active', 'black')])
 
-button1 = Button(text="Δες όλα τα φαγητά της εβδομάδας")
+button1 = Button(text="Δες όλα τα φαγητά της εβδομάδας",command=clear_window_1)
 button1.place(x = 200,y= 140)
 
-button2 = Button(text="Δες τα αγαπημένα φαγήτα σου")
+button2 = Button(text="Δες τα αγαπημένα φαγήτα σου",command=clear_window_2)
 button2.place(x=200,y=180)
 
 
