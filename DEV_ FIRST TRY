@@ -8,6 +8,10 @@ def b3():
     destruction()
     canv3.place(x=150,y=60)
     label4.place(x=230, y=80)
+    button18.place(x=200, y=140)
+    button19.place(x=350, y=140)
+    button20.place(x=200, y=190)
+    button21.place(x=350, y=190)
 
 # // για την Τριτη
 def b4():
@@ -150,6 +154,13 @@ button9 = Button(text="Κυριακή",command=b9)
 canv3 = Canvas(height=225, width=380, bg="LightCyan3")
 label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
 
+#Αρχικοποιηση για την Δευτερα
+button18 = Button(text = "Ψαροκροκέτες")
+button19 = Button(text = "Μπακαλίαρος")
+button20 = Button(text= "Ψάρι")
+button21 = Button(text ="Ριζότο")
+
+
 #Αρχικοποιηση για την Τριτη
 button10 = Button(text = "Μπριζόλες")
 button11 = Button(text = "Χοιρινό φούρνου")
@@ -161,8 +172,6 @@ button14 = Button(text="Φακές :(")
 button15 = Button(text="Ρεβύθια ")
 button16 = Button(text = "Φασολάδα ")
 button17 = Button(text = "Γίγαντες")
-
-
 
 
 
