@@ -6,9 +6,12 @@ from tkinter.ttk import *
 
 def b3():
     destruction()
-    canv3.place(x=150, y=60)
-    button10.place(x=200, y=140)
+    canv3.place(x=150,y=60)
+    button10.place(x=200,y=140)
     label4.place(x=230,y=80)
+    button11.place(x=350,y=140)
+    button12.place(x=200,y=190)
+    button13.place(x=350,y=190)
 
 
 def b4():
@@ -129,11 +132,15 @@ button8 = Button(text="Σάββατο",command=b8)
 button9 = Button(text="Κυριακή",command=b9)
 
 #Aρχικοποιηση τoυ canvas για ολες τις μερες τις εβδομαδας
-canv3 = Canvas(height=270, width=380, bg="LightCyan3")
+canv3 = Canvas(height=225, width=380, bg="LightCyan3")
 
 #Αρχικοποιηση για την Τριτη
 label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
 button10 = Button(text = "Μπριζόλες")
+button11 = Button(text = "Χοιρινό φούρνου")
+button12 = Button(text = "Σνίτσελ")
+button13 = Button(text = "Φαλάφελ")
+
 
 
 
