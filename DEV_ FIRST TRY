@@ -3,42 +3,53 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
-
+# Η συναρτηση για την Δευτερα
 def b3():
     destruction()
     canv3.place(x=150,y=60)
-    button10.place(x=200,y=140)
-    label4.place(x=230,y=80)
-    button11.place(x=350,y=140)
-    button12.place(x=200,y=190)
-    button13.place(x=350,y=190)
+    label4.place(x=230, y=80)
 
-
+# // για την Τριτη
 def b4():
     destruction()
     canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
+    button10.place(x=200, y=140)
+    button11.place(x=350, y=140)
+    button12.place(x=200, y=190)
+    button13.place(x=350, y=190)
 
+# //  για την Τεταρτη
 def b5():
     destruction()
     canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
 
+# // για την Πεμπτη
 def b6():
     destruction()
     canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
 
+# // για την Παρασκευη
 def b7():
     destruction()
     canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
 
+# // για το Σαββατο
 def b8():
     destruction()
     canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
 
+# // για την Κυριακη
 def b9():
     destruction()
     canv3.place(x=150, y=60)
+    label4.place(x=230, y=80)
 
-
+# καθαριζει την οθονη για την επομενη σελιδα
 def destruction():
     canv2.destroy()
     label3.destroy()
@@ -131,15 +142,19 @@ button7 = Button(text="Παρασκευή",command=b7)
 button8 = Button(text="Σάββατο",command=b8)
 button9 = Button(text="Κυριακή",command=b9)
 
-#Aρχικοποιηση τoυ canvas για ολες τις μερες τις εβδομαδας
+#Aρχικοποιηση τoυ canvas και της label για ολες τις μερες τις εβδομαδας
 canv3 = Canvas(height=225, width=380, bg="LightCyan3")
+label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
 
 #Αρχικοποιηση για την Τριτη
-label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
 button10 = Button(text = "Μπριζόλες")
 button11 = Button(text = "Χοιρινό φούρνου")
 button12 = Button(text = "Σνίτσελ")
 button13 = Button(text = "Φαλάφελ")
+
+#Αρχικοποιηση για την Τεταρτη
+
+
 
 
 
