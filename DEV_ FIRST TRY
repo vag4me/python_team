@@ -3,43 +3,57 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
-# Οι μερες της εβδομαδας για να διαλεξει ο χρηστης
-def show_new_window():
-    canv = Canvas(height=270, width=380, bg="LightCyan3")
-    canv.place(x=150, y=60)
+def b3():
+    destruction()
 
-    label3 = Label(text = "Διάλεξε μέρα",font= "Bold 20",background='LightCyan3')
+def b4():
+    destruction()
+
+def b5():
+    destruction()
+
+def b6():
+    destruction()
+
+def b7():
+    destruction()
+
+def b8():
+    destruction()
+
+def b9():
+    destruction()
+
+
+def destruction():
+    canv2.destroy()
+    label3.destroy()
+    button3.destroy()
+    button4.destroy()
+    button5.destroy()
+    button6.destroy()
+    button7.destroy()
+    button8.destroy()
+    button9.destroy()
+
+def page2():
+    canv2.place(x=150, y=60)
     label3.place(x=255, y=80)
-
-    button3 = Button(text="Δευτέρα")
-    button3.place(x = 200,y= 140)
-
-    button4 = Button(text="Τρίτη")
+    button3.place(x=200, y=140)
     button4.place(x=350, y=140)
-
-    button5 = Button(text="Τετάρτη")
     button5.place(x=200, y=190)
-
-    button6 = Button(text="Πέμπτη")
     button6.place(x=350, y=190)
-
-    button7 = Button(text="Παρασκευή")
     button7.place(x=200, y=240)
-
-    button7 = Button(text="Σάββατο")
-    button7.place(x=350, y=240)
-
-    button7 = Button(text="Κυριακή")
-    button7.place(x=275, y=290)
-
-
+    button8.place(x=350, y=240)
+    button9.place(x=275, y=290)
 
 def clear_window_1():
     label2.destroy()
     canv.destroy()
     button2.destroy()
     button1.destroy()
-    show_new_window()
+    page2()
+
 
 def clear_window_2():
     label2.destroy()
@@ -49,6 +63,8 @@ def clear_window_2():
 
 # Create object
 root = Tk()
+
+
 
 #input title
 root.title("Πρόγραμμα Λέσχης")
@@ -89,6 +105,17 @@ button1.place(x = 200,y= 140)
 
 button2 = Button(text="Δες τα αγαπημένα φαγήτα σου",command=clear_window_2)
 button2.place(x=200,y=180)
+
+#Αρχικοποιηση της σελιδας 2
+canv2 = Canvas(height=270, width=380, bg="LightCyan3")
+label3 = Label(text="Διάλεξε μέρα", font="Bold 20", background='LightCyan3')
+button3 = Button(text="Δευτέρα",command=b3)
+button4 = Button(text="Τρίτη",command=b4)
+button5 = Button(text="Τετάρτη",command=b5)
+button6 = Button(text="Πέμπτη",command=b6)
+button7 = Button(text="Παρασκευή",command=b7)
+button8 = Button(text="Σάββατο",command=b8)
+button9 = Button(text="Κυριακή",command=b9)
 
 
 
