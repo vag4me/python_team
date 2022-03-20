@@ -38,55 +38,6 @@ def b6():
     destruction()
     canv3.place(x=150, y=60)
     label4.place(x=230, y=80)
-
-# // για την Παρασκευη
-def b7():
-    destruction()
-    canv3.place(x=150, y=60)
-    label4.place(x=230, y=80)
-
-# // για το Σαββατο
-def b8():
-    destruction()#Import module
-import tkinter
-from tkinter import *
-from tkinter.ttk import *
-
-# Η συναρτηση για την Δευτερα
-def b3():
-    destruction()
-    canv3.place(x=150,y=60)
-    label4.place(x=230, y=80)
-    button18.place(x=200, y=140)
-    button19.place(x=350, y=140)
-    button20.place(x=200, y=190)
-    button21.place(x=350, y=190)
-
-# // για την Τριτη
-def b4():
-    destruction()
-    canv3.place(x=150, y=60)
-    label4.place(x=230, y=80)
-    button10.place(x=200, y=140)
-    button11.place(x=350, y=140)
-    button12.place(x=200, y=190)
-    button13.place(x=350, y=190)
-
-# //  για την Τεταρτη
-def b5():
-    destruction()
-    canv3.place(x=150, y=60)
-    label4.place(x=230, y=80)
-    button14.place(x=200, y=140)
-    button15.place(x=350, y=140)
-    button16.place(x=200, y=190)
-    button17.place(x=350, y=190)
-
-# // για την Πεμπτη
-def b6():
-    destruction()
-    canv3.place(x=150, y=60)
-    label4.place(x=230, y=80)
     button22.place(x=250, y=130)
     button23.place(x=250, y=170)
     button24.place(x=250, y=210)
