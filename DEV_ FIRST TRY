@@ -3,6 +3,7 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
+#καθαριζει την οθονη απο το κουμπι γισ της ημερες
 def clear_window_1():
     label2.destroy()
     canv.destroy()
@@ -10,7 +11,7 @@ def clear_window_1():
     button1.destroy()
     page2()
 
-
+#καθαριζει την οθονη απο το κουμπι για τα αγαπημενα
 def clear_window_2():
     label2.destroy()
     canv.destroy()
@@ -32,6 +33,7 @@ def start():
     button2 = Button(text="Δες τα αγαπημένα φαγήτα σου", command=clear_window_2)
     button2.place(x=200, y=180)
 
+#αν ο χρηστης πατησει το κουμπι πισω απο την Δευτερα
 def back_at_start1():
     canv3.destroy()
     label4.destroy()
@@ -42,6 +44,7 @@ def back_at_start1():
     back1.destroy()
     start()
 
+#αν ο χρηστης πατησει το κουμπι πισω απο την Τριτη
 def back_at_start2():
     canv3.destroy()
     label4.destroy()
@@ -52,6 +55,7 @@ def back_at_start2():
     back2.destroy()
     start()
 
+#αν ο χρηστης πατησει το κουμπι πισω απο την Τεταρτη
 def back_at_start3():
     canv3.destroy()
     label4.destroy()
@@ -62,6 +66,7 @@ def back_at_start3():
     back3.destroy()
     start()
 
+#αν ο χρηστης πατησει το κουμπι πισω απο την Πεμπτη
 def back_at_start4():
     canv3.destroy()
     label4.destroy()
@@ -72,6 +77,7 @@ def back_at_start4():
     back4.destroy()
     start()
 
+#αν ο χρηστης πατησει το κουμπι πισω απο την Παρασκευη
 def back_at_start5():
     canv3.destroy()
     label4.destroy()
@@ -82,6 +88,27 @@ def back_at_start5():
     back5.destroy()
     start()
 
+#αν ο χρηστης πατησει το κουμπι πισω απο το Σαββατο
+def back_at_start6():
+    canv3.destroy()
+    label4.destroy()
+    button30.destroy()
+    button31.destroy()
+    button32.destroy()
+    button33.destroy()
+    back6.destroy()
+    start()
+
+#αν ο χρηστης πατησει το κουμπι πισω απο την Κυριακη
+def back_at_start7():
+    canv3.destroy()
+    label4.destroy()
+    button34.destroy()
+    button35.destroy()
+    button36.destroy()
+    button37.destroy()
+    back7.destroy()
+    start()
 
 
 # Η συναρτηση για την Δευτερα
@@ -243,30 +270,74 @@ def b7():
     button29.place(x=350, y=190)
 
     back5 = Button(text="Πίσω", command=back_at_start5)
-    back5.place(x=270, y=350)
+    back5.place(x=270, y=240)
 
 
 # // για το Σαββατο
 def b8():
     destruction()
+    global canv3
+    global label4
+    global button30
+    global button31
+    global button32
+    global button33
+    global back6
+
+    canv3 = Canvas(height=225, width=380, bg="LightCyan3")
     canv3.place(x=150, y=60)
+
+    label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
     label4.place(x=230, y=80)
+
+    button30 = Button(text="Κρέας λεμονάτο")
     button30.place(x=200, y=140)
+
+    button31 = Button(text="Κρέας Κοκκινιστό")
     button31.place(x=350, y=140)
+
+    button32 = Button(text="   Τορτελίνια   ")
     button32.place(x=200, y=190)
+
+    button33 = Button(text="   Σνίτζελ        ")
     button33.place(x=350, y=190)
+
+    back6 = Button(text="Πίσω", command=back_at_start6)
+    back6.place(x=270, y=240)
 
 # // για την Κυριακη
 def b9():
     destruction()
+    global canv3
+    global label4
+    global button34
+    global button35
+    global button36
+    global button37
+    global back7
+
+    canv3 = Canvas(height=225, width=380, bg="LightCyan3")
     canv3.place(x=150, y=60)
+
+    label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
     label4.place(x=230, y=80)
+
+    button34 = Button(text="Σπαγγέτι")
     button34.place(x=200, y=140)
+
+    button35 = Button(text="Κοτόπουλο")
     button35.place(x=350, y=140)
+
+    button36 = Button(text="Μπηφτέκακια")
     button36.place(x=200, y=190)
+
+    button37 = Button(text="Κοτομπουκίες")
     button37.place(x=350, y=190)
 
-# καθαριζει την οθονη για την επομενη σελιδα
+    back7 = Button(text="Πίσω", command=back_at_start7)
+    back7.place(x=270, y=240)
+
+# καθαριζει την οθονη για την επομενη σελιδα 
 def destruction():
     canv2.destroy()
     label3.destroy()
@@ -278,6 +349,7 @@ def destruction():
     button8.destroy()
     button9.destroy()
 
+#εμφανιζει της μερες της εβδομαδας
 def page2():
     global canv2
     global label3
@@ -317,10 +389,10 @@ def page2():
     button9.place(x=275, y=290)
 
 
-# Create object
+# ανοιγμα του παραθυρου
 root = Tk()
 
-#input title
+#βαζει τιτλο
 root.title("Πρόγραμμα Λέσχης")
 
 root.geometry("700x500")
@@ -347,21 +419,6 @@ style.configure('TButton', font=
 ('calibri'),  borderwidth='4')
 style.map('TButton', foreground=[('active', '!disabled', 'blue')],
           background=[('active', 'black')])
-
-
-#Αρχικοποιηση για το Σαββατο
-button30 = Button(text="Κρέας λεμονάτο")
-button31 = Button(text = "Κρέας Κοκκινιστό")
-button32 = Button(text = "   Τορτελίνια   ")
-button33 = Button(text="   Σνίτζελ        ")
-
-#Αρχικοποιηση για την Κυριακη
-button34 = Button(text="Σπαγγέτι")
-button35 = Button(text="Κοτόπουλο")
-button36 = Button(text="Μπηφτέκακια")
-button37 = Button(text="Κοτομπουκίες")
-
-
 
 # Execute tkinter
 root.mainloop()
