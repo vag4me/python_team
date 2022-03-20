@@ -3,26 +3,37 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
+
 def b3():
     destruction()
+    canv3.place(x=150, y=60)
+    button10.place(x=200, y=140)
+    label4.place(x=230,y=80)
+
 
 def b4():
     destruction()
+    canv3.place(x=150, y=60)
 
 def b5():
     destruction()
+    canv3.place(x=150, y=60)
 
 def b6():
     destruction()
+    canv3.place(x=150, y=60)
 
 def b7():
     destruction()
+    canv3.place(x=150, y=60)
 
 def b8():
     destruction()
+    canv3.place(x=150, y=60)
 
 def b9():
     destruction()
+    canv3.place(x=150, y=60)
 
 
 def destruction():
@@ -116,6 +127,14 @@ button6 = Button(text="Πέμπτη",command=b6)
 button7 = Button(text="Παρασκευή",command=b7)
 button8 = Button(text="Σάββατο",command=b8)
 button9 = Button(text="Κυριακή",command=b9)
+
+#Aρχικοποιηση τoυ canvas για ολες τις μερες τις εβδομαδας
+canv3 = Canvas(height=270, width=380, bg="LightCyan3")
+
+#Αρχικοποιηση για την Τριτη
+label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
+button10 = Button(text = "Μπριζόλες")
+
 
 
 
