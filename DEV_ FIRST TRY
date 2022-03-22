@@ -73,6 +73,27 @@ def tuesday_food3():
     back10 = Button(text="Πίσω", command=back_at_start10)
     back10.place(x=550, y=700)
 
+def tuesday_food4():
+    clear_window_3()
+
+    global photo_falafel
+    global back11
+    global canv7
+    global label11
+    global label12
+
+    canv7 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv7.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label11 = Label(text="Αλλεργιογόνες ουσίες: Δεν υπάρχουν", font="Bold 18", background='LightCyan3')
+    label11.place(x=20, y=250)
+
+    photo_falafel = PhotoImage(file="C:/Users/user/Desktop/ergasia png/φαλαφελ.png")
+    label12 = Label(root, image=photo_falafel)
+    label12.place(x=650, y=250)
+
+    back11 = Button(text="Πίσω", command=back_at_start11)
+    back11.place(x=550, y=700)
 
 
 
@@ -218,6 +239,15 @@ def back_at_start10():
     back10.destroy()
     start()
 
+#αν ο χρηστης πατησει το πισω απο το φαγητο φαλαφελ
+def back_at_start11():
+    label11.destroy()
+    label12.destroy()
+    canv7.destroy()
+    back11.destroy()
+    start()
+
+
 
 
 
@@ -280,7 +310,7 @@ def b4():
     button12 = Button(text="Aλα Κρεμ",command=tuesday_food3)
     button12.place(x=470, y=415)
 
-    button13 = Button(text="Φαλάφελ")
+    button13 = Button(text="Φαλάφελ",command=tuesday_food4)
     button13.place(x=610, y=415)
 
     back2 = Button(text="Πίσω", command=back_at_start2)
