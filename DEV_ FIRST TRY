@@ -3,22 +3,76 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
+#παρουσιαση του φαγητου μπριζολα
 def tuesday_food1():
-    canv3.destroy()
-    label4.destroy()
-    button10.destroy()
-    button11.destroy()
-    button12.destroy()
-    button13.destroy()
-    back2.destroy()
+    clear_window_3()
 
-    global cg
+    global photo_mprizola
     global back8
+    global canv4
+    global label6
+    global label5
 
-    cg = PhotoImage(file="C:/Users/user/Desktop/ergasia png/μπριζολα.png")
-    # Show image using label
-    label5 = Label(root, image=cg)
-    label5.place(x=250, y=70)
+    canv4 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv4.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label6 = Label(text="Αλλεργιογόνες ουσίες: Σινάπι", font="Bold 18", background='LightCyan3')
+    label6.place(x=20, y=250)
+
+
+    photo_mprizola = PhotoImage(file="C:/Users/user/Desktop/ergasia png/μπριζολα.png")
+    label5 = Label(root, image=photo_mprizola)
+    label5.place(x=650, y=250)
+
+    back8 = Button(text="Πίσω",command=back_at_start8)
+    back8.place(x=550,y=700)
+
+#παρουσιαση του φαγητου τηγανια
+def tuesday_food2():
+    clear_window_3()
+
+    global photo_tigania
+    global back9
+    global canv5
+    global label7
+    global label8
+
+    canv5 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv5.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label7 = Label(text="Αλλεργιογόνες ουσίες: Δεν υπάρχουν", font="Bold 18", background='LightCyan3')
+    label7.place(x=20, y=250)
+
+    photo_tigania = PhotoImage(file="C:/Users/user/Desktop/ergasia png/τηγανια.png")
+    label8 = Label(root, image=photo_tigania)
+    label8.place(x=650, y=250)
+
+    back9 = Button(text="Πίσω", command=back_at_start9)
+    back9.place(x=550, y=700)
+
+#παρουσια του φαγητου
+def tuesday_food3():
+    clear_window_3()
+
+    global photo_alakrem
+    global back10
+    global canv6
+    global label9
+    global label10
+
+    canv6 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv6.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label9 = Label(text="Αλλεργιογόνες ουσίες: ίχνη από σέλινο", font="Bold 18", background='LightCyan3')
+    label9.place(x=20, y=250)
+
+    photo_alakrem = PhotoImage(file="C:/Users/user/Desktop/ergasia png/αλα κρεμ.png")
+    label10 = Label(root, image=photo_alakrem)
+    label10.place(x=650, y=250)
+
+    back10 = Button(text="Πίσω", command=back_at_start10)
+    back10.place(x=550, y=700)
+
 
 
 
@@ -37,6 +91,16 @@ def clear_window_2():
     canv.destroy()
     button2.destroy()
     button1.destroy()
+
+#καθαριζει την οθονη απο το μενου της τριτης
+def clear_window_3():
+    canv3.destroy()
+    label4.destroy()
+    button10.destroy()
+    button11.destroy()
+    button12.destroy()
+    button13.destroy()
+    back2.destroy()
 
 #συναρτηση για αρχικη σελιδα
 def start():
@@ -130,6 +194,32 @@ def back_at_start7():
     back7.destroy()
     start()
 
+#αν ο χρηστης πατησει το πισω απο το φαγητο μπριζολα
+def back_at_start8():
+    label6.destroy()
+    canv4.destroy()
+    back8.destroy()
+    label5.destroy()
+    start()
+
+#an ο χρηστης πατησει το πισω απο το φαγητο τηγανια
+def back_at_start9():
+    label7.destroy()
+    canv5.destroy()
+    back9.destroy()
+    label8.destroy()
+    start()
+
+# αν ο χρηστης πατησει το πισω απο το φαγητο αλα κρεμ
+def back_at_start10():
+    label9.destroy()
+    label10.destroy()
+    canv6.destroy()
+    back10.destroy()
+    start()
+
+
+
 
 # Η συναρτηση για την Δευτερα
 def b3():
@@ -184,10 +274,10 @@ def b4():
     button10 = Button(root,text="Μπριζόλες",command= tuesday_food1)
     button10.place(x=470, y=370)
 
-    button11 = Button(text="Χοιρινό φούρνου")
+    button11 = Button(text="Τηγανία",command=tuesday_food2)
     button11.place(x=610, y=370)
 
-    button12 = Button(text="Σνίτσελ")
+    button12 = Button(text="Aλα Κρεμ",command=tuesday_food3)
     button12.place(x=470, y=415)
 
     button13 = Button(text="Φαλάφελ")
