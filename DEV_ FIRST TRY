@@ -3,6 +3,26 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
+def tuesday_food1():
+    canv3.destroy()
+    label4.destroy()
+    button10.destroy()
+    button11.destroy()
+    button12.destroy()
+    button13.destroy()
+    back2.destroy()
+
+    global cg
+    global back8
+
+    cg = PhotoImage(file="C:/Users/user/Desktop/ergasia png/μπριζολα.png")
+    # Show image using label
+    label5 = Label(root, image=cg)
+    label5.place(x=250, y=70)
+
+
+
+
 #καθαριζει την οθονη απο το κουμπι γισ της ημερες
 def clear_window_1():
     label2.destroy()
@@ -24,14 +44,14 @@ def start():
     global label2
     global button1
     global button2
-    canv = Canvas(height=180, width=380, bg="LightCyan3")
-    canv.place(x=150, y=60)
+    canv = Canvas(height=270, width=380, bg="LightCyan3")
+    canv.place(relx=0.5, rely=0.5, anchor=CENTER)
     label2 = Label(text="Καλώς Ηρθατε!", font="Bold 20", background='LightCyan3')
-    label2.place(x=230, y=80)
-    button1 = Button(text="Δες όλα τα φαγητά της εβδομάδας", command=clear_window_1)
-    button1.place(x=200, y=140)
+    label2.place(x=490, y=300)
+    button1 = Button(text="Δες όλα τα φαγητά της εβδομάδας" ,command=clear_window_1)
+    button1.place(x=470, y=350)
     button2 = Button(text="Δες τα αγαπημένα φαγήτα σου", command=clear_window_2)
-    button2.place(x=200, y=180)
+    button2.place(x=470, y=390)
 
 #αν ο χρηστης πατησει το κουμπι πισω απο την Δευτερα
 def back_at_start1():
@@ -123,25 +143,25 @@ def b3():
     global back1
 
     canv3 = Canvas(height=225, width=380, bg="LightCyan3")
-    canv3.place(x=150, y=60)
+    canv3.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
-    label4.place(x=230, y=80)
+    label4.place(x=500, y=320)
 
     button18 = Button(text="Ψαροκροκέτες")
-    button18.place(x=200, y=140)
+    button18.place(x=470, y=370)
 
     button19 = Button(text="Μπακαλίαρος")
-    button19.place(x=350, y=140)
+    button19.place(x=610, y=370)
 
-    button20 = Button(text="Ψάρι ")
-    button20.place(x=200, y=190)
+    button20 = Button(text="  Ψάρι    ")
+    button20.place(x=470, y=415)
 
     button21 = Button(text="Ριζότο")
-    button21.place(x=350, y=190)
+    button21.place(x=610, y=415)
 
     back1 = Button(text="Πίσω", command=back_at_start1)
-    back1.place(x=270,y=240)
+    back1.place(x=540, y=470)
 
 
 # // για την Τριτη
@@ -156,25 +176,25 @@ def b4():
     global back2
 
     canv3 = Canvas(height=225, width=380, bg="LightCyan3")
-    canv3.place(x=150, y=60)
+    canv3.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
-    label4.place(x=230, y=80)
+    label4.place(x=500, y=320)
 
-    button10 = Button(text="Μπριζόλες")
-    button10.place(x=200, y=140)
+    button10 = Button(root,text="Μπριζόλες",command= tuesday_food1)
+    button10.place(x=470, y=370)
 
     button11 = Button(text="Χοιρινό φούρνου")
-    button11.place(x=350, y=140)
+    button11.place(x=610, y=370)
 
     button12 = Button(text="Σνίτσελ")
-    button12.place(x=200, y=190)
+    button12.place(x=470, y=415)
 
     button13 = Button(text="Φαλάφελ")
-    button13.place(x=350, y=190)
+    button13.place(x=610, y=415)
 
     back2 = Button(text="Πίσω", command=back_at_start2)
-    back2.place(x=270, y=240)
+    back2.place(x=540, y=470)
 
 # //  για την Τεταρτη
 def b5():
@@ -188,25 +208,25 @@ def b5():
     global back3
 
     canv3 = Canvas(height=225, width=380, bg="LightCyan3")
-    canv3.place(x=150, y=60)
+    canv3.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
-    label4.place(x=230, y=80)
+    label4.place(x=500, y=320)
 
     button14 = Button(text="Φακές :(")
-    button14.place(x=200, y=140)
+    button14.place(x=470, y=370)
 
     button15 = Button(text="Ρεβύθια ")
-    button15.place(x=350, y=140)
+    button15.place(x=610, y=370)
 
     button16 = Button(text="Φασολάδα ")
-    button16.place(x=200, y=190)
+    button16.place(x=470, y=415)
 
     button17 = Button(text="Γίγαντες")
-    button17.place(x=350, y=190)
+    button17.place(x=610, y=415)
 
     back3 = Button(text="Πίσω", command=back_at_start3)
-    back3.place(x=270, y=240)
+    back3.place(x=540, y=470)
 
 # // για την Πεμπτη
 def b6():
@@ -220,25 +240,25 @@ def b6():
     global back4
 
     canv3 = Canvas(height=225, width=380, bg="LightCyan3")
-    canv3.place(x=150, y=60)
+    canv3.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
-    label4.place(x=230, y=80)
+    label4.place(x=500, y=320)
 
     button22 = Button(text="Κοτομπουκίες")
-    button22.place(x=250, y=130)
+    button22.place(x=450, y=370)
 
     button23 = Button(text="Κοτόπουλο Μπούτι")
-    button23.place(x=250, y=170)
+    button23.place(x=590, y=370)
 
-    button24 = Button(text="Μπιφτέκι κοτόπουλο  ")
-    button24.place(x=250, y=210)
+    button24 = Button(text="Μπιφτέκι ")
+    button24.place(x=450, y=415)
 
     button25 = Button(text="Κοτόπουλο Κοκκινιστό")
-    button25.place(x=250, y=250)
+    button25.place(x=590, y=415)
 
     back4 = Button(text="Πίσω", command=back_at_start4)
-    back4.place(x=270, y=350)
+    back4.place(x=540, y=470)
 
 # // για την Παρασκευη
 def b7():
@@ -252,25 +272,25 @@ def b7():
     global back5
 
     canv3 = Canvas(height=225, width=380, bg="LightCyan3")
-    canv3.place(x=150, y=60)
+    canv3.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
-    label4.place(x=230, y=80)
+    label4.place(x=500, y=320)
 
     button26 = Button(text="Σουτζουκάκια")
-    button26.place(x=200, y=140)
+    button26.place(x=470, y=370)
 
     button27 = Button(text="Παστίτσιο :)")
-    button27.place(x=350, y=140)
+    button27.place(x=610, y=370)
 
     button28 = Button(text="Κεφτεδάκια ")
-    button28.place(x=200, y=190)
+    button28.place(x=470, y=415)
 
     button29 = Button(text="Γίγαντες  ")
-    button29.place(x=350, y=190)
+    button29.place(x=610, y=415)
 
     back5 = Button(text="Πίσω", command=back_at_start5)
-    back5.place(x=270, y=240)
+    back5.place(x=540, y=470)
 
 
 # // για το Σαββατο
@@ -285,25 +305,25 @@ def b8():
     global back6
 
     canv3 = Canvas(height=225, width=380, bg="LightCyan3")
-    canv3.place(x=150, y=60)
+    canv3.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
-    label4.place(x=230, y=80)
+    label4.place(x=500, y=320)
 
     button30 = Button(text="Κρέας λεμονάτο")
-    button30.place(x=200, y=140)
+    button30.place(x=450, y=370)
 
     button31 = Button(text="Κρέας Κοκκινιστό")
-    button31.place(x=350, y=140)
+    button31.place(x=610, y=370)
 
     button32 = Button(text="   Τορτελίνια   ")
-    button32.place(x=200, y=190)
+    button32.place(x=450, y=415)
 
     button33 = Button(text="   Σνίτζελ        ")
-    button33.place(x=350, y=190)
+    button33.place(x=610, y=415)
 
     back6 = Button(text="Πίσω", command=back_at_start6)
-    back6.place(x=270, y=240)
+    back6.place(x=540, y=470)
 
 # // για την Κυριακη
 def b9():
@@ -317,27 +337,27 @@ def b9():
     global back7
 
     canv3 = Canvas(height=225, width=380, bg="LightCyan3")
-    canv3.place(x=150, y=60)
+    canv3.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
-    label4.place(x=230, y=80)
+    label4.place(x=500, y=320)
 
     button34 = Button(text="Σπαγγέτι")
-    button34.place(x=200, y=140)
+    button34.place(x=470, y=370)
 
     button35 = Button(text="Κοτόπουλο")
-    button35.place(x=350, y=140)
+    button35.place(x=470, y=415)
 
     button36 = Button(text="Μπηφτέκακια")
-    button36.place(x=200, y=190)
+    button36.place(x=610, y=370)
 
     button37 = Button(text="Κοτομπουκίες")
-    button37.place(x=350, y=190)
+    button37.place(x=610, y=415)
 
     back7 = Button(text="Πίσω", command=back_at_start7)
-    back7.place(x=270, y=240)
+    back7.place(x=540, y=470)
 
-# καθαριζει την οθονη για την επομενη σελιδα 
+# καθαριζει την οθονη για την επομενη σελιδα
 def destruction():
     canv2.destroy()
     label3.destroy()
@@ -362,31 +382,31 @@ def page2():
     global button9
 
     canv2=Canvas(height=270, width=380, bg="LightCyan3")
-    canv2.place(x=150, y=60)
+    canv2.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label3 = Label(text="Διάλεξε μέρα", font="Bold 20", background='LightCyan3')
-    label3.place(x=255, y=80)
+    label3.place(x=515, y=300)
 
     button3 = Button(text="Δευτέρα", command=b3)
-    button3.place(x=200, y=140)
+    button3.place(x=470, y=350)
 
     button4 = Button(text="Τρίτη", command=b4)
-    button4.place(x=350, y=140)
+    button4.place(x=610, y=350)
 
     button5 = Button(text="Τετάρτη", command=b5)
-    button5.place(x=200, y=190)
+    button5.place(x=470, y=395)
 
     button6 = Button(text="Πέμπτη", command=b6)
-    button6.place(x=350, y=190)
+    button6.place(x=610, y=395)
 
     button7 = Button(text="Παρασκευή", command=b7)
-    button7.place(x=200, y=240)
+    button7.place(x=470, y=440)
 
     button8 = Button(text="Σάββατο", command=b8)
-    button8.place(x=350, y=240)
+    button8.place(x=610, y=440)
 
     button9 = Button(text="Κυριακή", command=b9)
-    button9.place(x=275, y=290)
+    button9.place(x=540, y=485)
 
 
 # ανοιγμα του παραθυρου
@@ -395,7 +415,7 @@ root = Tk()
 #βαζει τιτλο
 root.title("Πρόγραμμα Λέσχης")
 
-root.geometry("700x500")
+root.geometry("1200x856")
 
 #lock the deminsions of the window
 root.resizable(width=False, height=False)
