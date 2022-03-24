@@ -50,7 +50,7 @@ def tuesday_food2():
     back9 = Button(text="Πίσω", command=back_at_start9)
     back9.place(x=550, y=700)
 
-#παρουσια του φαγητου
+#παρουσιαση του φαγητου αλα κρεμ
 def tuesday_food3():
     clear_window_3()
 
@@ -73,6 +73,7 @@ def tuesday_food3():
     back10 = Button(text="Πίσω", command=back_at_start10)
     back10.place(x=550, y=700)
 
+#παρουσιαση του φαγητου φαλαφελ
 def tuesday_food4():
     clear_window_3()
 
@@ -95,6 +96,97 @@ def tuesday_food4():
     back11 = Button(text="Πίσω", command=back_at_start11)
     back11.place(x=550, y=700)
 
+#πααρουσιαση του φαγητου μπιφτεκι
+def thurday_food1():
+    clear_window_4()
+
+    global photo_mpifteki
+    global back12
+    global canv8
+    global label13
+    global label14
+
+    canv8 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv8.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label13 = Label(text="Αλλεργιογόνες ουσίες: Γλουτένη", font="Bold 18", background='LightCyan3')
+    label13.place(x=20, y=250)
+
+    photo_mpifteki = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Mpifteki.png")
+    label14 = Label(root, image=photo_mpifteki)
+    label14.place(x=650, y=250)
+
+    back12 = Button(text="Πίσω", command=back_at_start12)
+    back12.place(x=550, y=700)
+
+#παρουσιαση του φαγητου κοτοπουλο μπουτι
+def thursday_food2():
+    clear_window_4()
+
+    global photo_mpouti
+    global back13
+    global canv9
+    global label14
+    global label15
+
+    canv9 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv9.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label14 = Label(text="Αλλεργιογόνες ουσίες: Σινάπι", font="Bold 18", background='LightCyan3')
+    label14.place(x=20, y=250)
+
+    photo_mpouti = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Κοτοπουλο_μπουτι.png")
+    label15 = Label(root, image=photo_mpouti)
+    label15.place(x=650, y=250)
+
+    back13 = Button(text="Πίσω", command=back_at_start13)
+    back13.place(x=550, y=700)
+
+#παρουσιαση του φαγητου κοτομπουκιες
+def thursday_food3():
+    clear_window_4()
+
+    global photo_kotompoykies
+    global back14
+    global canv10
+    global label16
+    global label17
+
+    canv10 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv10.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label16 = Label(text="Αλλεργιογόνες ουσίες: Σόγια,γλουτένη,αυγό", font="Bold 18", background='LightCyan3')
+    label16.place(x=20, y=250)
+
+    photo_kotompoykies = PhotoImage(file="C:/Users/user/Desktop/ergasia png/κοτμπουκια.png")
+    label17 = Label(root, image=photo_kotompoykies)
+    label17.place(x=650, y=250)
+
+    back14 = Button(text="Πίσω", command=back_at_start14)
+    back14.place(x=550, y=700)
+
+#παρουσιαση φαγητου κοπανακι κοτοπουλο
+def thursday_food4():
+    clear_window_4()
+
+    global photo_kopanaki
+    global back15
+    global canv11
+    global label18
+    global label19
+
+    canv11 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv11.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label18 = Label(text="Αλλεργιογόνες ουσίες: Σινάπι", font="Bold 18", background='LightCyan3')
+    label18.place(x=20, y=250)
+
+    photo_kopanaki = PhotoImage(file="C:/Users/user/Desktop/ergasia png/kopanaki.png")
+    label19 = Label(root, image=photo_kopanaki)
+    label19.place(x=650, y=250)
+
+    back15 = Button(text="Πίσω", command=back_at_start15)
+    back15.place(x=550, y=700)
 
 
 
@@ -122,6 +214,16 @@ def clear_window_3():
     button12.destroy()
     button13.destroy()
     back2.destroy()
+
+#καθαριζει την οθονη απο το μενου της Πεμπτης
+def clear_window_4():
+    canv3.destroy()
+    label4.destroy()
+    button22.destroy()
+    button23.destroy()
+    button24.destroy()
+    button25.destroy()
+    back4.destroy()
 
 #συναρτηση για αρχικη σελιδα
 def start():
@@ -247,6 +349,37 @@ def back_at_start11():
     back11.destroy()
     start()
 
+#αν ο χρηστης pατησει το πισω απο το φαγητο μπιφτεκι
+def back_at_start12():
+    label13.destroy()
+    label14.destroy()
+    canv8.destroy()
+    back12.destroy()
+    start()
+
+#Αν ο χρηστης πατησει το πισω απο το φαγητο κοτοπουλο_μπουτι
+def back_at_start13():
+    label14.destroy()
+    label15.destroy()
+    canv9.destroy()
+    back13.destroy()
+    start()
+
+# αν ο χρηστης πατησει το πισω απο το φαγητο κοτομπουκιες
+def back_at_start14():
+    label16.destroy()
+    label17.destroy()
+    canv10.destroy()
+    back14.destroy()
+    start()
+
+# αν ο χρηστης πατησει το πισω απο το φαγητο κοπανακι
+def back_at_start15():
+    label18.destroy()
+    label19.destroy()
+    canv11.destroy()
+    back15.destroy()
+    start()
 
 
 
@@ -365,16 +498,16 @@ def b6():
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
     label4.place(x=500, y=320)
 
-    button22 = Button(text="Κοτομπουκίες")
+    button22 = Button(text="Κοτομπουκίες",command=thursday_food3)
     button22.place(x=450, y=370)
 
-    button23 = Button(text="Κοτόπουλο Μπούτι")
+    button23 = Button(text="Κοτόπουλο Μπούτι",command=thursday_food2)
     button23.place(x=590, y=370)
 
-    button24 = Button(text="Μπιφτέκι ")
+    button24 = Button(text="Μπιφτέκι ",command=thurday_food1)
     button24.place(x=450, y=415)
 
-    button25 = Button(text="Κοτόπουλο Κοκκινιστό")
+    button25 = Button(text="Κοπανάκι Κοτόπουλου",command=thursday_food4)
     button25.place(x=590, y=415)
 
     back4 = Button(text="Πίσω", command=back_at_start4)
