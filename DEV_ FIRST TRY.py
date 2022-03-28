@@ -3,6 +3,111 @@ import tkinter
 from tkinter import *
 from tkinter.ttk import *
 
+
+#παρουσιαση φαγητου ψαροκροκετες
+def monday_food1():
+    clear_window_5()
+
+    global photo_psarokroketes
+    global back16
+    global canv12
+    global label20
+    global label21
+
+    canv12 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv12.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label20 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :230kcal.\n3) Υδατάνθρακες: 16g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label20.place(x=20, y=320)
+
+    photo_psarokroketes = PhotoImage(file="C:/Users/user/Desktop/ergasia png/ψαρακροκετες.png")
+    label21 = Label(root, image=photo_psarokroketes)
+    label21.place(x=650, y=250)
+
+    back16 = Button(text="Πίσω", command=back_at_start16)
+    back16.place(x=550, y=700)
+
+
+#παρουσιαση φαγητου περκα
+def monday_food2():
+    clear_window_5()
+
+    global photo_perka
+    global back17
+    global canv13
+    global label22
+    global label23
+
+    canv13 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv13.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label22 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Αλλεργία των ψαριών.\n2) Θερμίδες Aνα 100γρα. :142kcal.\n3) Υδατάνθρακες: 1,6g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label22.place(x=20, y=320)
+
+    photo_perka = PhotoImage(file="C:/Users/user/Desktop/ergasia png/περκα_λεμονατη.png")
+    label23 = Label(root, image=photo_perka)
+    label23.place(x=650, y=250)
+
+    back17 = Button(text="Πίσω", command=back_at_start17)
+    back17.place(x=550, y=700)
+
+
+#παρουσιαση φαγητου ριζοτο
+def monday_food3():
+    clear_window_5()
+
+    global photo_rizoto
+    global back18
+    global canv14
+    global label24
+    global label25
+
+    canv14 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv14.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label24 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Αλλεργία των ψαριών.\n2) Θερμίδες Aνα 100γρα. :519kcal.\n3) Υδατάνθρακες: 16.4g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label24.place(x=20, y=320)
+
+    photo_rizoto = PhotoImage(file="C:/Users/user/Desktop/ergasia png/rizoto.png")
+    label25 = Label(root, image=photo_rizoto)
+    label25.place(x=650, y=250)
+
+    back18 = Button(text="Πίσω", command=back_at_start18)
+    back18.place(x=550, y=700)
+
+
+#παρουσιαση φαγητου μπακαλιαρος
+def monday_food4():
+    clear_window_5()
+
+    global photo_mpakaliarow
+    global back19
+    global canv15
+    global label26
+    global label27
+
+    canv15 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv15.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label26 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Αλλεργία των ψαριών.\n2) Θερμίδες Aνα 100γρα. :380kcal.\n3) Υδατάνθρακες: 25.4g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label26.place(x=20, y=320)
+
+    photo_mpakaliarow = PhotoImage(file="C:/Users/user/Desktop/ergasia png/μπακαλιαρος.png")
+    label27 = Label(root, image=photo_mpakaliarow)
+    label27.place(x=650, y=250)
+
+    back19 = Button(text="Πίσω", command=back_at_start19)
+    back19.place(x=550, y=700)
+
+
 #παρουσιαση του φαγητου μπριζολα
 def tuesday_food1():
     clear_window_3()
@@ -109,8 +214,8 @@ def thurday_food1():
     canv8 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv8.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label13 = Label(text="Αλλεργιογόνες ουσίες: Γλουτένη", font="Bold 18", background='LightCyan3')
-    label13.place(x=20, y=250)
+    label13 = Label(text="1) Αλλεργιογόνες ουσίες: Γλουτένη.\n2) Θερμίδες Aνα 100γρα. :246kcal.\n3) Υδατάνθρακες: 8g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ", font="Bold 18", background='LightCyan3')
+    label13.place(x=20, y=320)
 
     photo_mpifteki = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Mpifteki.png")
     label14 = Label(root, image=photo_mpifteki)
@@ -224,6 +329,15 @@ def clear_window_4():
     button24.destroy()
     button25.destroy()
     back4.destroy()
+
+def clear_window_5():
+    canv3.destroy()
+    label4.destroy()
+    button18.destroy()
+    button19.destroy()
+    button20.destroy()
+    button21.destroy()
+    back1.destroy()
 
 #συναρτηση για αρχικη σελιδα
 def start():
@@ -381,6 +495,37 @@ def back_at_start15():
     back15.destroy()
     start()
 
+# an o xristis pathsei piso apo tiw psarokroketes
+def back_at_start16():
+    label20.destroy()
+    label21.destroy()
+    canv12.destroy()
+    back16.destroy()
+    start()
+
+# an o xristis pathsei piso apo tin perka
+def back_at_start17():
+    label22.destroy()
+    label23.destroy()
+    canv13.destroy()
+    back17.destroy()
+    start()
+
+# an o xristis pathsei piso apo tin ριζοτο
+def back_at_start18():
+    label24.destroy()
+    label25.destroy()
+    canv14.destroy()
+    back18.destroy()
+    start()
+
+# an o xristis pathsei piso apo ton mpakaliaro
+def back_at_start19():
+    label26.destroy()
+    label27.destroy()
+    canv15.destroy()
+    back19.destroy()
+    start()
 
 
 
@@ -401,16 +546,16 @@ def b3():
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
     label4.place(x=500, y=320)
 
-    button18 = Button(text="Ψαροκροκέτες")
+    button18 = Button(text="Ψαροκροκέτες",command=monday_food1)
     button18.place(x=470, y=370)
 
-    button19 = Button(text="Μπακαλίαρος")
+    button19 = Button(text="Μπακαλίαρος",command=monday_food4)
     button19.place(x=610, y=370)
 
-    button20 = Button(text="  Ψάρι    ")
+    button20 = Button(text="  Πέρκα   ",command=monday_food2)
     button20.place(x=470, y=415)
 
-    button21 = Button(text="Ριζότο")
+    button21 = Button(text="Ριζότο",command=monday_food3)
     button21.place(x=610, y=415)
 
     back1 = Button(text="Πίσω", command=back_at_start1)
