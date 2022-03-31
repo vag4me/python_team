@@ -121,8 +121,10 @@ def tuesday_food1():
     canv4 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv4.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label6 = Label(text="Αλλεργιογόνες ουσίες: Σινάπι", font="Bold 18", background='LightCyan3')
-    label6.place(x=20, y=250)
+    label6 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Σινάπι.\n2) Θερμίδες Aνα 100γρα. :380kcal.\n3) Υδατάνθρακες: 0g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label6.place(x=20, y=320)
 
 
     photo_mprizola = PhotoImage(file="C:/Users/user/Desktop/ergasia png/μπριζολα.png")
@@ -145,8 +147,10 @@ def tuesday_food2():
     canv5 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv5.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label7 = Label(text="Αλλεργιογόνες ουσίες: Δεν υπάρχουν", font="Bold 18", background='LightCyan3')
-    label7.place(x=20, y=250)
+    label7 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :230kcal.\n3) Υδατάνθρακες: 1.5g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label7.place(x=20, y=320)
 
     photo_tigania = PhotoImage(file="C:/Users/user/Desktop/ergasia png/τηγανια.png")
     label8 = Label(root, image=photo_tigania)
@@ -168,8 +172,10 @@ def tuesday_food3():
     canv6 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv6.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label9 = Label(text="Αλλεργιογόνες ουσίες: ίχνη από σέλινο", font="Bold 18", background='LightCyan3')
-    label9.place(x=20, y=250)
+    label9 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :260kcal.\n3) Υδατάνθρακες: 11g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label9.place(x=20, y=320)
 
     photo_alakrem = PhotoImage(file="C:/Users/user/Desktop/ergasia png/αλα κρεμ.png")
     label10 = Label(root, image=photo_alakrem)
@@ -191,8 +197,10 @@ def tuesday_food4():
     canv7 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv7.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label11 = Label(text="Αλλεργιογόνες ουσίες: Δεν υπάρχουν", font="Bold 18", background='LightCyan3')
-    label11.place(x=20, y=250)
+    label11 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :333kcal.\n3) Υδατάνθρακες: 26g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label11.place(x=20, y=320)
 
     photo_falafel = PhotoImage(file="C:/Users/user/Desktop/ergasia png/φαλαφελ.png")
     label12 = Label(root, image=photo_falafel)
@@ -200,6 +208,111 @@ def tuesday_food4():
 
     back11 = Button(text="Πίσω", command=back_at_start11)
     back11.place(x=550, y=700)
+
+
+#παρουσιαση φαγητου fakes
+def wensday_food1():
+    clear_window_6()
+
+    global photo_fakes
+    global back20
+    global canv16
+    global label28
+    global label29
+
+    canv16 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv16.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label28 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :116kcal.\n3) Υδατάνθρακες: 20g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label28.place(x=20, y=320)
+
+    photo_fakes = PhotoImage(file="C:/Users/user/Desktop/ergasia png/φακες.png")
+    label29 = Label(root, image=photo_fakes)
+    label29.place(x=650, y=250)
+
+    back20 = Button(text="Πίσω", command=back_at_start20)
+    back20.place(x=550, y=700)
+
+#παρουσιαση φαγητου ρεβυθια
+def wensday_food2():
+    clear_window_6()
+
+    global photo_refithia
+    global back21
+    global canv17
+    global label30
+    global label31
+
+    canv17 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv17.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label30 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :364kcal.\n3) Υδατάνθρακες: 61g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label30.place(x=20, y=320)
+
+    photo_refithia = PhotoImage(file="C:/Users/user/Desktop/ergasia png/ρεβυθια.png")
+    label31 = Label(root, image=photo_refithia)
+    label31.place(x=650, y=250)
+
+    back21 = Button(text="Πίσω", command=back_at_start21)
+    back21.place(x=550, y=700)
+
+
+#παρουσιαση φαγητου φασολαδα
+def wensday_food3():
+    clear_window_6()
+
+    global photo_fasolada
+    global back22
+    global canv18
+    global label32
+    global label33
+
+    canv18 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv18.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label32 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Σέλινο.\n2) Θερμίδες Aνα 100γρα. :142kcal.\n3) Υδατάνθρακες: 26g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label32.place(x=20, y=320)
+
+    photo_fasolada = PhotoImage(file="C:/Users/user/Desktop/ergasia png/φασολαδα.png")
+    label33 = Label(root, image=photo_fasolada)
+    label33.place(x=650, y=250)
+
+    back22 = Button(text="Πίσω", command=back_at_start22)
+    back22.place(x=550, y=700)
+
+#παρουσιαση φαγητου γιγαντες
+def wensday_food4():
+    clear_window_6()
+
+    global photo_gigantes
+    global back23
+    global canv19
+    global label34
+    global label35
+
+    canv19 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv19.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label34 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Σέλινο.\n2) Θερμίδες Aνα 100γρα. :149kcal.\n3) Υδατάνθρακες: 34g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label34.place(x=20, y=320)
+
+    photo_gigantes = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Γιγαντες.png")
+    label35 = Label(root, image=photo_gigantes)
+    label35.place(x=650, y=250)
+
+    back23 = Button(text="Πίσω", command=back_at_start23)
+    back23.place(x=550, y=700)
+
+
+
 
 #πααρουσιαση του φαγητου μπιφτεκι
 def thurday_food1():
@@ -214,7 +327,9 @@ def thurday_food1():
     canv8 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv8.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label13 = Label(text="1) Αλλεργιογόνες ουσίες: Γλουτένη.\n2) Θερμίδες Aνα 100γρα. :246kcal.\n3) Υδατάνθρακες: 8g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ", font="Bold 18", background='LightCyan3')
+    label13 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Γλουτένη.\n2) Θερμίδες Aνα 100γρα. :208kcal.\n3) Υδατάνθρακες: 6.5g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
     label13.place(x=20, y=320)
 
     photo_mpifteki = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Mpifteki.png")
@@ -237,8 +352,10 @@ def thursday_food2():
     canv9 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv9.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label14 = Label(text="Αλλεργιογόνες ουσίες: Σινάπι", font="Bold 18", background='LightCyan3')
-    label14.place(x=20, y=250)
+    label14 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Σινάπι.\n2) Θερμίδες Aνα 100γρα. :209kcal.\n3) Υδατάνθρακες: 0g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label14.place(x=20, y=320)
 
     photo_mpouti = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Κοτοπουλο_μπουτι.png")
     label15 = Label(root, image=photo_mpouti)
@@ -260,8 +377,10 @@ def thursday_food3():
     canv10 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv10.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label16 = Label(text="Αλλεργιογόνες ουσίες: Σόγια,γλουτένη,αυγό", font="Bold 18", background='LightCyan3')
-    label16.place(x=20, y=250)
+    label16 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Σόγια,γλουτένη,αυγό.\n2) Θερμίδες Aνα 100γρα. :295kcal.\n3) Υδατάνθρακες: 0g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label16.place(x=20, y=320)
 
     photo_kotompoykies = PhotoImage(file="C:/Users/user/Desktop/ergasia png/κοτμπουκια.png")
     label17 = Label(root, image=photo_kotompoykies)
@@ -283,8 +402,10 @@ def thursday_food4():
     canv11 = Canvas(height=400, width=1200, bg="LightCyan3")
     canv11.place(relx=0.5, rely=0.5, anchor=CENTER)
 
-    label18 = Label(text="Αλλεργιογόνες ουσίες: Σινάπι", font="Bold 18", background='LightCyan3')
-    label18.place(x=20, y=250)
+    label18 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Σινάπι.\n2) Θερμίδες Aνα 100γρα. :239kcal.\n3) Υδατάνθρακες: 0g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label18.place(x=20, y=320)
 
     photo_kopanaki = PhotoImage(file="C:/Users/user/Desktop/ergasia png/kopanaki.png")
     label19 = Label(root, image=photo_kopanaki)
@@ -330,6 +451,7 @@ def clear_window_4():
     button25.destroy()
     back4.destroy()
 
+# καθαριζει την οθονη σπο το μενου της Δευτερας
 def clear_window_5():
     canv3.destroy()
     label4.destroy()
@@ -338,6 +460,17 @@ def clear_window_5():
     button20.destroy()
     button21.destroy()
     back1.destroy()
+
+# καθαριζει την οθονη σπο το μενου της Δευτερας
+def clear_window_6():
+    canv3.destroy()
+    label4.destroy()
+    button14.destroy()
+    button15.destroy()
+    button16.destroy()
+    button17.destroy()
+    back3.destroy()
+
 
 #συναρτηση για αρχικη σελιδα
 def start():
@@ -527,7 +660,37 @@ def back_at_start19():
     back19.destroy()
     start()
 
+# an o xristis pathsei piso apo fakes
+def back_at_start20():
+    label28.destroy()
+    label29.destroy()
+    canv16.destroy()
+    back20.destroy()
+    start()
 
+# an o xristis pathsei piso apo refithia
+def back_at_start21():
+    label30.destroy()
+    label31.destroy()
+    canv17.destroy()
+    back21.destroy()
+    start()
+
+# an o xristis pathsei piso apo fasolada
+def back_at_start22():
+    label32.destroy()
+    label33.destroy()
+    canv18.destroy()
+    back22.destroy()
+    start()
+
+# an o xristis pathsei piso apo gigantes
+def back_at_start23():
+    label34.destroy()
+    label35.destroy()
+    canv19.destroy()
+    back23.destroy()
+    start()
 
 # Η συναρτηση για την Δευτερα
 def b3():
@@ -611,16 +774,16 @@ def b5():
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
     label4.place(x=500, y=320)
 
-    button14 = Button(text="Φακές :(")
+    button14 = Button(text="Φακές :(",command=wensday_food1)
     button14.place(x=470, y=370)
 
-    button15 = Button(text="Ρεβύθια ")
+    button15 = Button(text="Ρεβύθια ",command=wensday_food2)
     button15.place(x=610, y=370)
 
-    button16 = Button(text="Φασολάδα ")
+    button16 = Button(text="Φασολάδα ",command=wensday_food3)
     button16.place(x=470, y=415)
 
-    button17 = Button(text="Γίγαντες")
+    button17 = Button(text="Γίγαντες",command=wensday_food4)
     button17.place(x=610, y=415)
 
     back3 = Button(text="Πίσω", command=back_at_start3)
