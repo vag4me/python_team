@@ -4,6 +4,7 @@ from tkinter import *
 from tkinter.ttk import *
 
 
+
 #παρουσιαση φαγητου ψαροκροκετες
 def monday_food1():
     clear_window_5()
@@ -506,7 +507,7 @@ def saturday_food4():
     canv23.place(relx=0.5, rely=0.5, anchor=CENTER)
 
     label42 = Label(
-        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :486kcal.\n3) Υδατάνθρακες: 7g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :250kcal.\n3) Υδατάνθρακες: 12.4g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
         font="Bold 18", background='LightCyan3')
     label42.place(x=20, y=320)
 
@@ -517,7 +518,106 @@ def saturday_food4():
     back27 = Button(text="Πίσω", command=back_at_start27)
     back27.place(x=550, y=700)
 
+#παρουσιαση φαγητου σουτζουκακια
+def friday_food1():
+    clear_window_8()
 
+    global photo_soutzoukakia
+    global back28
+    global canv24
+    global label44
+    global label45
+
+    canv24 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv24.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label44 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Δεν βρέθηκε.\n2) Θερμίδες Aνα 100γρα. :150kcal.\n3) Υδατάνθρακες: 1.4g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label44.place(x=20, y=320)
+
+    photo_soutzoukakia = PhotoImage(file="C:/Users/user/Desktop/ergasia png/soutzoukaki.png")
+    label45 = Label(root, image=photo_soutzoukakia)
+    label45.place(x=700, y=250)
+
+    back28 = Button(text="Πίσω", command=back_at_start28)
+    back28.place(x=550, y=700)
+
+#παρουσιαση φαγητου κεφτεδακια
+def friday_food2():
+    clear_window_8()
+
+    global photo_keftedakia
+    global back29
+    global canv25
+    global label46
+    global label47
+
+    canv25 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv25.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label46 = Label(
+        text="1) Αλλεργιογόνες ουσίες: γλουτένη,σουσάμι,αυγο.\n2) Θερμίδες Aνα 100γρα. :196kcal.\n3) Υδατάνθρακες: 8g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label46.place(x=20, y=320)
+
+    photo_keftedakia = PhotoImage(file="C:/Users/user/Desktop/ergasia png/keftedaki.png")
+    label47 = Label(root, image=photo_keftedakia)
+    label47.place(x=730, y=310)
+
+    back29 = Button(text="Πίσω", command=back_at_start29)
+    back29.place(x=550, y=700)
+
+
+#παρουσιαση φαγητου gigantes
+def friday_food3():
+    clear_window_8()
+
+    global photo_giga
+    global back30
+    global canv26
+    global label48
+    global label49
+
+    canv26 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv26.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label48 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Σέλινο.\n2) Θερμίδες Aνα 100γρα. :149kcal.\n3) Υδατάνθρακες: 34g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label48.place(x=20, y=320)
+
+    photo_giga = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Γιγαντες.png")
+    label49 = Label(root, image=photo_giga)
+    label49.place(x=700, y=250)
+
+    back30 = Button(text="Πίσω", command=back_at_start30)
+    back30.place(x=550, y=700)
+
+#παρουσιαση φαγητου παστιτζιο
+def friday_food4():
+    clear_window_8()
+
+    global photo_past
+    global back31
+    global canv27
+    global label50
+    global label51
+
+    canv27 = Canvas(height=400, width=1200, bg="LightCyan3")
+    canv27.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+    label50 = Label(
+        text="1) Αλλεργιογόνες ουσίες: Γλουτένη,λακτόζη,αυγό.\n2) Θερμίδες Aνα 100γρα. :220kcal.\n3) Υδατάνθρακες: 15g.\n4) Συνοδεύεται απο ψωμί και σαλάτα. ",
+        font="Bold 18", background='LightCyan3')
+    label50.place(x=20, y=320)
+
+    photo_past = PhotoImage(file="C:/Users/user/Desktop/ergasia png/pastitsio.png")
+    label51 = Label(root, image=photo_past)
+    label51.place(x=700, y=250)
+
+    back31 = Button(text="Πίσω", command=back_at_start31)
+    back31.place(x=550, y=700)
 
 #καθαριζει την οθονη απο το κουμπι γισ της ημερες
 def clear_window_1():
@@ -533,6 +633,7 @@ def clear_window_2():
     canv.destroy()
     button2.destroy()
     button1.destroy()
+
 
 #καθαριζει την οθονη απο το μενου της τριτης
 def clear_window_3():
@@ -574,7 +675,7 @@ def clear_window_6():
     button17.destroy()
     back3.destroy()
 
-# καθαριζει την οθονη σπο το μενου της Παρασκευης
+# καθαριζει την οθονη σπο το μενου του Σαββατου
 def clear_window_7():
     canv3.destroy()
     label4.destroy()
@@ -583,6 +684,16 @@ def clear_window_7():
     button32.destroy()
     button33.destroy()
     back6.destroy()
+
+# καθαριζει την οθονη απο το μενου της Παρασκευης
+def clear_window_8():
+    canv3.destroy()
+    label4.destroy()
+    button26.destroy()
+    button27.destroy()
+    button28.destroy()
+    button29.destroy()
+    back5.destroy()
 
 
 #συναρτηση για αρχικη σελιδα
@@ -837,6 +948,39 @@ def back_at_start27():
     back27.destroy()
     start()
 
+# an o xristis pathsei piso apo soutzoykakia
+def back_at_start28():
+    label44.destroy()
+    label45.destroy()
+    canv24.destroy()
+    back28.destroy()
+    start()
+
+# an o xristis pathsei piso apo keftedaakia
+def back_at_start29():
+    label46.destroy()
+    label47.destroy()
+    canv25.destroy()
+    back29.destroy()
+    start()
+
+# an o xristis pathsei piso apo gigantes paraskeyis
+def back_at_start30():
+    label48.destroy()
+    label49.destroy()
+    canv26.destroy()
+    back30.destroy()
+    start()
+
+# an o xristis pathsei piso apo pastitsio
+def back_at_start31():
+    label50.destroy()
+    label51.destroy()
+    canv27.destroy()
+    back31.destroy()
+    start()
+
+
 # Η συναρτηση για την Δευτερα
 def b3():
     destruction()
@@ -983,16 +1127,16 @@ def b7():
     label4 = Label(text="Επίλεξε φαγητό", font="Bold 20", background='LightCyan3')
     label4.place(x=500, y=320)
 
-    button26 = Button(text="Σουτζουκάκια")
+    button26 = Button(text="Σουτζουκάκια",command=friday_food1)
     button26.place(x=470, y=370)
 
-    button27 = Button(text="Παστίτσιο :)")
+    button27 = Button(text="Παστίτσιο :)",command=friday_food4)
     button27.place(x=610, y=370)
 
-    button28 = Button(text="Κεφτεδάκια ")
+    button28 = Button(text="Κεφτεδάκια ",command=friday_food2)
     button28.place(x=470, y=415)
 
-    button29 = Button(text="Γίγαντες  ")
+    button29 = Button(text="Γίγαντες  ",command=friday_food3)
     button29.place(x=610, y=415)
 
     back5 = Button(text="Πίσω", command=back_at_start5)
