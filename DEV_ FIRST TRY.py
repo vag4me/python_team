@@ -23,7 +23,7 @@ def monday_food1():
         font="Bold 18", background='LightCyan3')
     label20.place(x=20, y=320)
 
-    photo_psarokroketes = PhotoImage(file="C:/Users/user/Desktop/ergasia png/ψαρακροκετες.png")
+    photo_psarokroketes = PhotoImage(file="ψαρακροκετες.png")
     label21 = Label(root, image=photo_psarokroketes)
     label21.place(x=650, y=250)
 
@@ -49,7 +49,7 @@ def monday_food2():
         font="Bold 18", background='LightCyan3')
     label22.place(x=20, y=320)
 
-    photo_perka = PhotoImage(file="C:/Users/user/Desktop/ergasia png/περκα_λεμονατη.png")
+    photo_perka = PhotoImage(file="περκα_λεμονατη.png")
     label23 = Label(root, image=photo_perka)
     label23.place(x=650, y=250)
 
@@ -75,7 +75,7 @@ def monday_food3():
         font="Bold 18", background='LightCyan3')
     label24.place(x=20, y=320)
 
-    photo_rizoto = PhotoImage(file="C:/Users/user/Desktop/ergasia png/rizoto.png")
+    photo_rizoto = PhotoImage(file="rizoto.png")
     label25 = Label(root, image=photo_rizoto)
     label25.place(x=650, y=250)
 
@@ -101,7 +101,7 @@ def monday_food4():
         font="Bold 18", background='LightCyan3')
     label26.place(x=20, y=320)
 
-    photo_mpakaliarow = PhotoImage(file="C:/Users/user/Desktop/ergasia png/μπακαλιαρος.png")
+    photo_mpakaliarow = PhotoImage(file="μπακαλιαρος.png")
     label27 = Label(root, image=photo_mpakaliarow)
     label27.place(x=650, y=250)
 
@@ -128,7 +128,7 @@ def tuesday_food1():
     label6.place(x=20, y=320)
 
 
-    photo_mprizola = PhotoImage(file="C:/Users/user/Desktop/ergasia png/μπριζολα.png")
+    photo_mprizola = PhotoImage(file="μπριζολα.png")
     label5 = Label(root, image=photo_mprizola)
     label5.place(x=650, y=250)
 
@@ -153,7 +153,7 @@ def tuesday_food2():
         font="Bold 18", background='LightCyan3')
     label7.place(x=20, y=320)
 
-    photo_tigania = PhotoImage(file="C:/Users/user/Desktop/ergasia png/τηγανια.png")
+    photo_tigania = PhotoImage(file="τηγανια.png")
     label8 = Label(root, image=photo_tigania)
     label8.place(x=650, y=250)
 
@@ -178,7 +178,7 @@ def tuesday_food3():
         font="Bold 18", background='LightCyan3')
     label9.place(x=20, y=320)
 
-    photo_alakrem = PhotoImage(file="C:/Users/user/Desktop/ergasia png/αλα κρεμ.png")
+    photo_alakrem = PhotoImage(file="αλα κρεμ.png")
     label10 = Label(root, image=photo_alakrem)
     label10.place(x=650, y=250)
 
@@ -203,7 +203,7 @@ def tuesday_food4():
         font="Bold 18", background='LightCyan3')
     label11.place(x=20, y=320)
 
-    photo_falafel = PhotoImage(file="C:/Users/user/Desktop/ergasia png/φαλαφελ.png")
+    photo_falafel = PhotoImage(file="φαλαφελ.png")
     label12 = Label(root, image=photo_falafel)
     label12.place(x=650, y=250)
 
@@ -229,7 +229,7 @@ def wensday_food1():
         font="Bold 18", background='LightCyan3')
     label28.place(x=20, y=320)
 
-    photo_fakes = PhotoImage(file="C:/Users/user/Desktop/ergasia png/φακες.png")
+    photo_fakes = PhotoImage(file="φακες.png")
     label29 = Label(root, image=photo_fakes)
     label29.place(x=650, y=250)
 
@@ -254,7 +254,7 @@ def wensday_food2():
         font="Bold 18", background='LightCyan3')
     label30.place(x=20, y=320)
 
-    photo_refithia = PhotoImage(file="C:/Users/user/Desktop/ergasia png/ρεβυθια.png")
+    photo_refithia = PhotoImage(file="ρεβυθια.png")
     label31 = Label(root, image=photo_refithia)
     label31.place(x=650, y=250)
 
@@ -280,7 +280,7 @@ def wensday_food3():
         font="Bold 18", background='LightCyan3')
     label32.place(x=20, y=320)
 
-    photo_fasolada = PhotoImage(file="C:/Users/user/Desktop/ergasia png/φασολαδα.png")
+    photo_fasolada = PhotoImage(file="φασολαδα.png")
     label33 = Label(root, image=photo_fasolada)
     label33.place(x=650, y=250)
 
@@ -305,14 +305,12 @@ def wensday_food4():
         font="Bold 18", background='LightCyan3')
     label34.place(x=20, y=320)
 
-    photo_gigantes = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Γιγαντες.png")
+    photo_gigantes = PhotoImage(file="Γιγαντες.png")
     label35 = Label(root, image=photo_gigantes)
     label35.place(x=650, y=250)
 
     back23 = Button(text="Πίσω", command=back_at_start23)
     back23.place(x=550, y=700)
-
-
 
 
 #πααρουσιαση του φαγητου μπιφτεκι
@@ -333,7 +331,7 @@ def thurday_food1():
         font="Bold 18", background='LightCyan3')
     label13.place(x=20, y=320)
 
-    photo_mpifteki = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Mpifteki.png")
+    photo_mpifteki = PhotoImage(file="Mpifteki.png")
     label14 = Label(root, image=photo_mpifteki)
     label14.place(x=650, y=250)
 
@@ -358,7 +356,7 @@ def thursday_food2():
         font="Bold 18", background='LightCyan3')
     label14.place(x=20, y=320)
 
-    photo_mpouti = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Κοτοπουλο_μπουτι.png")
+    photo_mpouti = PhotoImage(file="Κοτοπουλο_μπουτι.png")
     label15 = Label(root, image=photo_mpouti)
     label15.place(x=650, y=250)
 
@@ -383,7 +381,7 @@ def thursday_food3():
         font="Bold 18", background='LightCyan3')
     label16.place(x=20, y=320)
 
-    photo_kotompoykies = PhotoImage(file="C:/Users/user/Desktop/ergasia png/κοτμπουκια.png")
+    photo_kotompoykies = PhotoImage(file="κοτμπουκια.png")
     label17 = Label(root, image=photo_kotompoykies)
     label17.place(x=650, y=250)
 
@@ -408,7 +406,7 @@ def thursday_food4():
         font="Bold 18", background='LightCyan3')
     label18.place(x=20, y=320)
 
-    photo_kopanaki = PhotoImage(file="C:/Users/user/Desktop/ergasia png/kopanaki.png")
+    photo_kopanaki = PhotoImage(file="kopanaki.png")
     label19 = Label(root, image=photo_kopanaki)
     label19.place(x=650, y=250)
 
@@ -434,7 +432,7 @@ def saturday_food1():
         font="Bold 18", background='LightCyan3')
     label36.place(x=20, y=320)
 
-    photo_tortelinia = PhotoImage(file="C:/Users/user/Desktop/ergasia png/τορτελινια.png")
+    photo_tortelinia = PhotoImage(file="τορτελινια.png")
     label37 = Label(root, image=photo_tortelinia)
     label37.place(x=750, y=250)
 
@@ -459,7 +457,7 @@ def saturday_food2():
         font="Bold 18", background='LightCyan3')
     label38.place(x=20, y=320)
 
-    photo_kokkino = PhotoImage(file="C:/Users/user/Desktop/ergasia png/κρεας_κοκκινιστο.png")
+    photo_kokkino = PhotoImage(file="κρεας_κοκκινιστο.png")
     label39 = Label(root, image=photo_kokkino)
     label39.place(x=750, y=300)
 
@@ -485,7 +483,7 @@ def saturday_food3():
         font="Bold 18", background='LightCyan3')
     label40.place(x=20, y=320)
 
-    photo_lemonato = PhotoImage(file="C:/Users/user/Desktop/ergasia png/κρεας_λεμονατο.png")
+    photo_lemonato = PhotoImage(file="κρεας_λεμονατο.png")
     label41 = Label(root, image=photo_lemonato)
     label41.place(x=750, y=240)
 
@@ -511,7 +509,7 @@ def saturday_food4():
         font="Bold 18", background='LightCyan3')
     label42.place(x=20, y=320)
 
-    photo_snitsel = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Σνιτσελ.png")
+    photo_snitsel = PhotoImage(file="Σνιτσελ.png")
     label43 = Label(root, image=photo_snitsel)
     label43.place(x=750, y=290)
 
@@ -536,7 +534,7 @@ def friday_food1():
         font="Bold 18", background='LightCyan3')
     label44.place(x=20, y=320)
 
-    photo_soutzoukakia = PhotoImage(file="C:/Users/user/Desktop/ergasia png/soutzoukaki.png")
+    photo_soutzoukakia = PhotoImage(file="soutzoukaki.png")
     label45 = Label(root, image=photo_soutzoukakia)
     label45.place(x=700, y=250)
 
@@ -561,7 +559,7 @@ def friday_food2():
         font="Bold 18", background='LightCyan3')
     label46.place(x=20, y=320)
 
-    photo_keftedakia = PhotoImage(file="C:/Users/user/Desktop/ergasia png/keftedaki.png")
+    photo_keftedakia = PhotoImage(file="keftedaki.png")
     label47 = Label(root, image=photo_keftedakia)
     label47.place(x=730, y=310)
 
@@ -587,7 +585,7 @@ def friday_food3():
         font="Bold 18", background='LightCyan3')
     label48.place(x=20, y=320)
 
-    photo_giga = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Γιγαντες.png")
+    photo_giga = PhotoImage(file="Γιγαντες.png")
     label49 = Label(root, image=photo_giga)
     label49.place(x=700, y=250)
 
@@ -612,7 +610,7 @@ def friday_food4():
         font="Bold 18", background='LightCyan3')
     label50.place(x=20, y=320)
 
-    photo_past = PhotoImage(file="C:/Users/user/Desktop/ergasia png/pastitsio.png")
+    photo_past = PhotoImage(file="pastitsio.png")
     label51 = Label(root, image=photo_past)
     label51.place(x=700, y=250)
 
@@ -637,7 +635,7 @@ def sunday_food1():
         font="Bold 18", background='LightCyan3')
     label52.place(x=20, y=320)
 
-    photo_kotom = PhotoImage(file="C:/Users/user/Desktop/ergasia png/κοτμπουκια.png")
+    photo_kotom = PhotoImage(file="κοτμπουκια.png")
     label53 = Label(root, image=photo_kotom)
     label53.place(x=700, y=250)
 
@@ -662,7 +660,7 @@ def sunday_food2():
         font="Bold 18", background='LightCyan3')
     label54.place(x=20, y=320)
 
-    photo_koto = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Κοτοπουλο_μπουτι.png")
+    photo_koto = PhotoImage(file="Κοτοπουλο_μπουτι.png")
     label55 = Label(root, image=photo_koto)
     label55.place(x=700, y=250)
 
@@ -688,7 +686,7 @@ def sunday_food3():
         font="Bold 18", background='LightCyan3')
     label56.place(x=20, y=320)
 
-    photo_kef = PhotoImage(file="C:/Users/user/Desktop/ergasia png/Mpifteki.png")
+    photo_kef = PhotoImage(file="Mpifteki.png")
     label57 = Label(root, image=photo_kef)
     label57.place(x=700, y=250)
 
@@ -713,7 +711,7 @@ def sunday_food4():
         font="Bold 18", background='LightCyan3')
     label58.place(x=20, y=320)
 
-    photo_spa = PhotoImage(file="C:/Users/user/Desktop/ergasia png/spaggeti.png")
+    photo_spa = PhotoImage(file="spaggeti.png")
     label59 = Label(root, image=photo_spa)
     label59.place(x=700, y=280)
 
