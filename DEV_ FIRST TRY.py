@@ -736,6 +736,23 @@ def clear_window_2():
     button2.destroy()
     button1.destroy()
 
+    global canv32
+    global label60
+    global back36
+
+    canv32 = Canvas(height=300, width=520, bg = "LightCyan3")
+    canv32.place(relx=0.5,rely=0.5,anchor=CENTER)
+
+    label60 = Label(text= "Αυτη η εφαρμογή έχει σκοπό να παρουσιάσει οπτικά ολα τα\nμεσημεριανά φαγητά που προσφέρονται "
+                          "απο την λέσχη.\nΟι πληροφορίες που δίνονται (υδατάνθρακες,θερμίδες)\nμπορει να διαφερουν απο"
+                          " την πραγματικότητα.Στην εφαρμογή \nπαρουσιάζονται τα φαγητά οπου εγκρίθηκαν απο την \nφοιτητική"
+                          " μέριμνα.Αν το πρόγραμμα φαγητου αλλάξει \nτοτε η εταιρία ΧΟΥΤΟΣ και η φοιτητική μέριμνα ηρθαν"
+                          " σε νέα συμφωνία. \nΑυτη η εφαρμογή δεν θα ενημερωθεί αν αυτο συμβει.    "
+                            ,font="Bold 10",background='LightCyan3')
+    label60.place(x=360,y=300)
+
+    back36 = Button(text="Δες τα φαγητά",command=clear_window_10)
+    back36.place(x=530,y=500)
 
 #καθαριζει την οθονη απο το μενου της τριτης
 def clear_window_3():
@@ -807,6 +824,12 @@ def clear_window_9():
     button37.destroy()
     back7.destroy()
 
+def clear_window_10():
+    canv32.destroy()
+    label60.destroy()
+    back36.destroy()
+    start()
+
 
 #συναρτηση για αρχικη σελιδα
 def start():
@@ -820,7 +843,7 @@ def start():
     label2.place(x=490, y=300)
     button1 = Button(text="Δες όλα τα φαγητά της εβδομάδας" ,command=clear_window_1)
     button1.place(x=470, y=350)
-    button2 = Button(text="Δες τα αγαπημένα φαγήτα σου", command=clear_window_2)
+    button2 = Button(text="       Διαβάστε πριν την χρήση        ", command=clear_window_2)
     button2.place(x=470, y=390)
 
 #αν ο χρηστης πατησει το κουμπι πισω απο την Δευτερα
